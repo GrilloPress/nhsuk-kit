@@ -1,0 +1,37 @@
+{% set title = 'YOLO!' %}
+{% set content_title = "YOLO!" %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/choices.html' %}
+{% block body %}
+<div class="breadcrumb" aria-label="breadcrumb">
+  <ol>
+    <li><a href="#">Home</a></li>
+    <li class="breadcrumb__last">YOLO!</li>
+  </ol>
+</div>
+
+<main id="content" role="main">
+  <div class="page-section">
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <h1 class="page-title__NHSUK">{{content_title}} <small>Sub section title</small></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <p>
+            This is a test page!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</main>
+{% endblock %}

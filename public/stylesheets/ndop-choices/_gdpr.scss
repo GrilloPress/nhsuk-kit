@@ -1,0 +1,162 @@
+.gdpr-cookie-section {
+
+  font-size: 17px !important;
+  background-color: #f0f8ff;
+  border-bottom: 2px solid #005eb8;
+
+  .page-section {
+    padding: 12px 0;
+  }
+
+  .page-section * + * {
+    margin-top: 10px;
+  }
+
+  p {
+
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  h4, .h4 {
+
+    font-size: 22px;
+    line-height: 28px;
+    @media (min-width: 925px) {
+      line-height: 32px;
+    }
+  }
+
+  h5, .h5 {
+
+    font-size: 19px;
+  }
+
+  details {
+
+    margin-top: 16px;
+  }
+
+  details summary {
+
+    font-size: 17px !important;
+    line-height: 24px;
+    color: #004382;
+
+  }
+
+  legend {
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .button {
+
+    width: auto;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 8px 12px;
+
+    &.button--link {
+
+      background-color: transparent;
+      color: #004382;
+      box-shadow: none;
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 925px){
+    .page-section * + * {
+        margin-top: 16px;
+    }
+  }
+
+  .multiple-choice--checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      // @include bold-font(20);
+      margin-right: 8px;
+      display: block;
+      @media (min-width: 925px){
+        display: inline-block;
+      }
+    }
+
+    // Box.
+    & + label:before {
+      content: '';
+      margin-right: 6px;
+      vertical-align: middle;
+      width: 28px;
+      height: 28px;
+      border: 3px solid #005eb8;
+    }
+
+    // Box focus
+    &:focus + label:before {
+      box-shadow: 0 0 0 5px #ffb81c;
+    }
+
+    // Box checked
+    &:checked + label:before {
+      background: transparent;
+    }
+
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: "";
+      border: solid;
+      border-width: 0 0 5px 5px;
+      background: transparent;
+      width: 16px;
+      height: 10px;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      zoom: 1;
+      filter: alpha(opacity=0);
+    }
+  }
+
+  .checkbox-blue + label:before {
+
+    display: inline-block;
+
+  }
+
+  .util-no-margin {
+    margin: 0;
+    @media (min-width: 925px) {
+      margin: 0;
+    }
+  }
+
+  .table--responsive {
+
+    margin: 0;
+    overflow-x: auto;
+
+  }
+
+
+}
+
+
+.gdpr-policy-section {
+
+  background-color: transparent;
+  border-bottom: none;
+}
