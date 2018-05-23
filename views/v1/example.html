@@ -2,6 +2,7 @@
 {% set content_title = "YOLO!" %}
 {% set PROTOTYPE_URL = 'v1' %}
 {% block scripts %}
+<script src="/javascripts/v1/example.js"></script>
 {% endblock %}
 {% extends 'layouts/choices.html' %}
 {% block body %}
@@ -28,10 +29,16 @@
           <p>
             This is a test page!
           </p>
+          <p>
+            <a href="/v1/example.html">One way of doing links</a>
+          </p>
+          <p>
+            <a href="/{{PROTOTYPE_URL}}/example.html">Another way... using the set PROTOTYPE_URL value... good for lots of clones of things</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  
+
 </main>
 {% endblock %}
